@@ -7,10 +7,9 @@ export class Game {
     this.lost = false; //game lost
   }
   
-  round() {
+  playerRound() {
     return this.playerTurn(this.randomRoll());
   }
-
 
   randomRoll () {
     return (1 + Math.floor(Math.random() * 6));
@@ -23,9 +22,27 @@ export class Game {
       return this.infectionRate + roll;
     }
   }
+  
+  timeTracker () {
+    setInterval(() => {
+      this.gameTimer--;
+    }, 1000);
+  } 
 }
+/*
+export class HungryBear {
 
+  constructor(name) {
+    this.name = name;
+    this.foodLevel = 10;
+  }
 
+  setHunger() {
+    setInterval(() => {
+      this.foodLevel--;
+    }, 1000);
+  }
+}
 
 
 //Inside of Game Class
@@ -34,3 +51,4 @@ export class Game {
 //60 Second interval time ==> phase clock
 //Game Lost Status: false
 //Game Won Status: false
+*/

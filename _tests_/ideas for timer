@@ -1,0 +1,34 @@
+setTimeout(function(){
+  changeScoreX2(playerTurn(roll) {
+    if (roll % 2 == 0)  {
+      return this.infectionRate - (roll*2);   
+    } else  {
+      return this.infectionRate + (roll*2);
+    }, 60000)
+});
+
+*** How to change a function? -- reset the value of a function?
+**** ORRRR add else/if statements in the playerTUrn function
+that correlate with the timer
+--maybe we don't need a phase clock?
+
+
+if (this.gameTime >240)
+  if (roll % 2 == 0)  {
+      return this.infectionRate - roll;   
+    } else  {
+      return this.infectionRate + roll;
+    }
+  }--> phase1  == minute 1
+this.gameTime<240 && this.gameTime> 180 --> phase2 == minute 2
+this.gameTime<180 && this.gameTime>120 --> phase3 == minute3
+this.gameTime<120 && this.gameTime>60 -->phase 4
+this.gameTime <60 && this.gameTime>0 --> phase 5
+
+setInterval(function(){
+  this.gameTimer - 1; 1000;
+})
+
+let timer = new Timer
+
+var timer = new Timer({ fps: 30, run: function(){ //run game code here } }); timer. start(); timer. stop();

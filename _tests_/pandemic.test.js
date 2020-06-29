@@ -1,7 +1,12 @@
 import { Game } from './../src/pandemic.js';
 
 describe ('Game', () => {
+  jest.useFakeTimers();
   let newGame = new Game();
+
+  afterEach(function() {
+    jest.clearAllTimers();
+  });
   
   test ('should randomly roll a number 1 through 6', () =>  {
     let roll = newGame.randomRoll();
@@ -19,12 +24,22 @@ describe ('Game', () => {
     expect(newGame.playerTurn(6)).toEqual(19);
   });
   test('Should show that the round function calls on playerTurn function with randomRoll() as the argument', () =>  {
-    expect(newGame.round()).toBeGreaterThan(18);
-    expect(newGame.round()).toBeLessThan(32);
+    expect(newGame.playerRound()).toBeGreaterThan(18);
+    expect(newGame.playerRound()).toBeLessThan(32);
   });
-  //matcher that measures effects
 
-  //odd increases infection rate
+  /*
+  test('should decrement the gametimer by 1 every second',() => {
+    newGame.timeTracker();
+    jest.advanceTimersByTime(1000);
+    expect(newGame.gameTimer).toEqual(299);
+  });
+  */
+  test('should decrement the gametimer by 5 every 5 seconds', () => {
+    newGame.timeTracker();
+    jest.advanceTimersByTime(5000);
+    expect(newGame.gameTimer).toEqual(295); 
+  });
 });
 
 
