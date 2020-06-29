@@ -16,9 +16,9 @@ export class Game {
   }
 
   playerTurn(roll) {
-    if (roll % 2 == 0)  {
+    if (this.gameTimer>=240 && roll % 2 == 0)  {
       return this.infectionRate - roll;   
-    } else  {
+    } else if(this.gameTimer >=240 && roll % 2 !== 0)  {
       return this.infectionRate + roll;
     }
   }

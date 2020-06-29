@@ -13,7 +13,7 @@ _This is a 2 day project at Epicodus to build a Pandemic style board game.  A ga
 | :-------------   | :------------- | :------------- |
 | Player1 will press button to roll the 6-sided dice  |  button press   |  5    |
 | Player2 will press button to roll the 6 sided dice  | button press  |   3 |
-| When first dice roll occurs, 60 second timer begins | button press  |  timer begins   |
+| When first dice roll occurs, 300 second timer begins | button press  |  timer begins   |
 | Even rolled numbers will add to the infection rate |  4  |  infection rate increased by 4%  |
 | Odd rolled numbers will reduce the infection rate |  5  |  Reduce infection rate by 5%   |
 | -----  | ------ | ----- |
@@ -24,7 +24,7 @@ _This is a 2 day project at Epicodus to build a Pandemic style board game.  A ga
 |For the seconds from 181 - 240, a rolls' value is quadrulpled | 3 | 12
 |For the seconds from 241 - 300, a rolls' value is 5x | 3 | 15
 |The effect of the roll (whether it acts like an odd or even number) is determined by the final value of the roll | 3 during seconds 61 - 120 | it is changed to a 6 and it adds to the infection rate
-|Game ends after 20 rounds or 5 minutes (300 seconds) |  20 dice rolls per / 5 minutes time / player   |   game over  |
+|Game ends after 20 rounds or 5 minutes (300 seconds) |  20 dice rolls or 5 minutes time or infection rate exceeding 100%  |   game over  |
 
 
 ## Setup/Installation Requirements

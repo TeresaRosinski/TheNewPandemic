@@ -24,6 +24,8 @@ describe ('Game', () => {
     expect(newGame.playerTurn(6)).toEqual(19);
   });
   test('Should show that the round function calls on playerTurn function with randomRoll() as the argument', () =>  {
+    newGame.timeTracker();
+    jest.advanceTimersByTime(5000);
     expect(newGame.playerRound()).toBeGreaterThan(18);
     expect(newGame.playerRound()).toBeLessThan(32);
   });
