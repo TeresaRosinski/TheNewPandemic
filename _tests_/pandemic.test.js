@@ -1,9 +1,12 @@
-import { Character } from './../src/pandemic.js';
+import { Game } from './../src/pandemic.js';
 
-describe ('Character', () => {
-  let newPlayer = new Character();
-
-  test ('should .   ', () =>  {
-    expect().toEqual();
+describe ('Game', () => {
+  
+  test ('should randomly roll a number 1 through 6', () =>  {
+    let newGame = new Game();
+  
+    expect(newGame.rollDice()).toBe(randomNumber);
   });
 });
+
+
