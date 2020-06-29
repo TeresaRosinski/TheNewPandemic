@@ -8,7 +8,7 @@ export class Game {
   }
   
   round() {
-    //this.playerTurn(this.randomRoll());
+    return this.playerTurn(this.randomRoll());
   }
 
 
