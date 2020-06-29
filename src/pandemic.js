@@ -1,9 +1,9 @@
 export class Game {
   constructor() {
-    this.infectionRate = 25;  // percentage?
-    this.gameTimer = 300; // Seconds
-    this.phaseClock = 60; // Count down for next phase
-    this.won = false; //game winning status
+    //this.infectionRate = 25;  // percentage?
+    //this.gameTimer = 300; // Seconds
+    //this.phaseClock = 60; // Count down for next phase
+    //this.won = false; //game winning status
   }
   
   rollDice() {
