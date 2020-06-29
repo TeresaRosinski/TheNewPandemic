@@ -1,16 +1,18 @@
-# _PROJECT NAME_
+# _The New Pandemic_
 
-#### _SHORT DESCR_
+#### _A pandemic style board game built in 2 days, 6.29.20_
 
-#### By _**YOUR NAME HERE**_
+#### By _**Taylor Phillips and Teresa Rosinski**_
 
 ## Description
 
-_Long deiscription._
+_This is a 2 day project at Epicodus to build a Pandemic style board game.  We practiced testing with Jest_
 
 ### Specs
 | Spec | Input | Output |
-| :-------------     | :------------- | :------------- |
+| :-------------   | :------------- | :------------- |
+| User will select a character class  |     |      |
+| 
 
 
 ## Setup/Installation Requirements
@@ -46,4 +48,4 @@ _VSCode_
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2020 **_Your name(s)_**
+Copyright (c) 2020 **_Taylor Phillips and Teresa Rosinski_**
