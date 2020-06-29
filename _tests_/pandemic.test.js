@@ -16,7 +16,7 @@ describe ('Game', () => {
     expect(newGame.playerTurn(5)).toEqual(30);
   });
   test('Should show that even rolled numbers subtract that amount from infectionRate', () =>  {
-    expect(newGame.playerTurn(6)).toEqual(30);
+    expect(newGame.playerTurn(6)).toEqual(19);
   });
   //matcher that measures effects
 
