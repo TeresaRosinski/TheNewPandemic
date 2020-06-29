@@ -18,6 +18,10 @@ describe ('Game', () => {
   test('Should show that even rolled numbers subtract that amount from infectionRate', () =>  {
     expect(newGame.playerTurn(6)).toEqual(19);
   });
+  test('Should show that the round function calls on playerTurn function with randomRoll() as the argument', () =>  {
+    expect(newGame.round()).toBeGreaterThan(18);
+    expect(newGame.round()).toBeLessThan(32);
+  });
   //matcher that measures effects
 
   //odd increases infection rate

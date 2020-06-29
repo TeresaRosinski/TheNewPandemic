@@ -6,6 +6,12 @@ export class Game {
     this.won = false; //game winning status
     this.lost = false; //game lost
   }
+  
+  round() {
+    //this.playerTurn(this.randomRoll());
+  }
+
+
   randomRoll () {
     return (1 + Math.floor(Math.random() * 6));
   }
