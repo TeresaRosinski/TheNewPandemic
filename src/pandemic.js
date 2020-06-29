@@ -6,16 +6,16 @@ export class Game {
     this.won = false; //game winning status
     this.lost = false; //game lost
   }
-  
-  rollDice() {
-    let roll = (1 + Math.floor(Math.random() * 6));
-    /*if (roll % 2 == 0)  {
-      this.infectionRate - roll;   
+  randomRoll () {
+    return (1 + Math.floor(Math.random() * 6));
+  }
+
+  playerTurn(roll) {
+    if (roll % 2 == 0)  {
+      return this.infectionRate - roll;   
     } else  {
-      this.infectionRate + roll;
+      return this.infectionRate + roll;
     }
-    return this.infectionRate; */
-    return roll; 
   }
 }
 
